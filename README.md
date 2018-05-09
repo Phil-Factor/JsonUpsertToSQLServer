@@ -1,6 +1,6 @@
 # Importing JSON Collections into SQL Server.
 
-This is a repository to go with a Simple-talk article that is yet to be published. 
+This is a repository to go with a Simple-talk article called '**Importing JSON Collections into SQL Server**' [that is published here](https://www.red-gate.com/simple-talk/sql/t-sql-programming/importing-json-collections-sql-server/). 
 
 It demonstrates how to import a JSON file into SQL Server and accomodate it in a staging table, before assimilating the data by stocking a set of relational tables. 
 
