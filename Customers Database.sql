@@ -52,17 +52,19 @@ GO
 
 IF EXISTS
   (
+  SELECT * FROM sys.objects WHERE objects.object_id LIKE Object_Id('Customer.CreditCard')
+  )
+  DROP TABLE Customer.CreditCard;
+GO
+
+IF EXISTS
+  (
   SELECT * FROM sys.objects WHERE objects.object_id LIKE Object_Id('Customer.Person')
   )
   DROP TABLE Customer.Person;
 GO
 
-IF EXISTS
-  (
-  SELECT * FROM sys.objects WHERE objects.object_id LIKE Object_Id('Customer.CreditCard')
-  )
-  DROP TABLE Customer.CreditCard;
-GO
+
 
 CREATE TABLE Customer.Person
   (
